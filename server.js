@@ -40,8 +40,9 @@ app.get("/api/:date", function (req, res) {
   }
 });
 
+const port = process.env.PORT || 8000;
 
 // listen for requests :)
-var listener = app.listen(8000, function () {
+var listener = app.listen(port, function () {
   console.log(`Your app is listening on: http://localhost:${listener.address().port}`);
 });
